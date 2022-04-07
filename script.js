@@ -1,6 +1,5 @@
 
-const btnContainer = document.querySelector('.button-numbers')
-const submitBtn = document.querySelector('.btn-submit');
+const submitBtn = document.querySelector('.btn-submit'); 
 
 
 
