@@ -35,27 +35,25 @@ button {
   padding: 30px 20px 0; 
 }
 
+
+
 .container-content-img {
   background-color:hsl(216, 18%, 17%);
   padding: 10px;
   border-radius: 100%;
 }
 
-.container-buttons {
-  padding: 10px 20px 40px;
+.button-numbers {
+  padding: 10px 0px 0px;
   margin: 0 auto;
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
-  
 }
 
 button {
-  flex: auto;
-  margin: 20px 10px;
+  margin: 0 auto 20px;
   border-radius: 100%;
-  margin-top: 0;
-  padding: 12px 0;
+  padding: 12px 20px;
   font-size: 20px;
   color: hsl(217, 12%, 63%);
   background-color:hsl(205, 19%, 18%);
@@ -64,10 +62,26 @@ button {
 }
 
 .btn-submit {
-  flex-wrap:wrap;
-  border-radius: 20px;
-  margin: 0 auto;
+  border-radius: 40px;
+  margin: 0 auto 40px;  
   width: 100%;
   background-color: #ffffff;
   color: hsl(25, 97%, 53%);
+}
+
+button:hover {
+  background-color:hsl(25, 97%, 53%)
+}
+
+.btn-submit:hover{
+  color: white;
+}
+
+button.selected {
+  background-color: grey
+}
+
+.container-submit {
+  margin: 0;
+  padding: 70px 20px; 
 }
