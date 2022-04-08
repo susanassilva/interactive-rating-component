@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,52 @@
   <title>Interactive Rating Component</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <section class="section-page">
-    <div class="container">
-      <div class="container-content">
-        <img src="./images/icon-star.svg" class="container-content-img">
-        <h1>How did we do?</h1>
-        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-      </div>
-      <div class="container-buttons">
-        <div class="button-numbers">
-          <button class="btn" id='btn-1' onclick="rating(1)">1</button>
-          <button class="btn" id="btn-2" onclick="rating(2)">2</button>
-          <button class="btn" id="btn-3" onclick="rating(3)">3</button>
-          <button class="btn" id="btn-4" onclick="rating(4)">4</button>
-          <button class="btn" id="btn-5" onclick="rating(5)">5</button>
+
+  <div class="container">
+    <section class="section-page">
+      <div class='container-card' id="container-card">
+        <div class="container-content">
+          <img src="./images/icon-star.svg" class="container-content-img">
+          <h1>How did we do?</h1>
+          <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
         </div>
-        <button type="submit" class="btn-submit" >Submit</button>
+
+
+        <div class="container-buttons">
+            <button class="btn" id='btn-1' value="1" onclick="rate_one()">1</button>
+            <button class="btn" id="btn-2" value="2" onclick="rate_two()">2</button>
+            <button class="btn" id="btn-3" value="3" onclick="rate_three()">3</button>
+            <button class="btn" id="btn-4" value="4" onclick="rate_four()">4</button>
+            <button class="btn" id="btn-5" value="5" onclick="rate_five()">5</button>
+        </div>
+        <button type="submit" class="btn-submit" onClick="submitBtn()">Submit</button>
+        
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="section-submit" >
+      <div class="container-submit" id="container-submit" style = 'display:none'>
+        <div class="container-content">
+        <img src="./images/illustration-thank-you.svg" class="submit-img">
+        <p class="result">You select <span id="rate-selected">x</span> out of 5</p>
+        <h1>Thank you!</h1>
+
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+      </div>
+      </div>
+    </section>
+  </div>
+
   <footer>
     <div class="footer-container">
       <p>Challenge by Frontend Mentor. Coded by @susanassilva</p>
     </div>
   </footer>
   <script src="script.js"></script>
+
 </body>
+
 </html>
 
-
-<!-- Submit You selected out of 5 Thank you! 
-. -->

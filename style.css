@@ -8,6 +8,7 @@ body {
 h1 {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
+  padding: 8% 0 3% 0;
 }
 
 p {
@@ -16,6 +17,8 @@ p {
   font-weight: 400;
   line-height: 1.50rem;
 }
+
+/*Botões*/
 
 button {
   display: inline;
@@ -32,43 +35,12 @@ button:focus {
   background-color: hsl(217, 12%, 63%);
 }
 
-
-.container {
-  width: 25%;
-  margin: 110px auto 40px;
-  padding: 0 10px;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(180deg, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
-}
-
-.container-content {
-  margin: 0;
-  padding: 30px 20px 0; 
-}
-
-.container-content-img {
-  background-color:hsla(216, 12%, 54%, 0.205);
-  padding: 10px;
-  border-radius: 50%;
-}
-
-.button-numbers {
-  gap: 0 20px;
-  margin: 15px auto;
-  display: flex;
-  font-weight: bold;
-  justify-content: center;
-}
-
 .btn {
   color: hsl(217, 12%, 63%);
   background-color:hsla(216, 12%, 54%, 0.205);
   border-radius: 100%;
   padding: 12px 18px;
 }
-
 
 .btn-submit {
   border-radius: 40px;
@@ -79,16 +51,42 @@ button:focus {
   color: hsl(25, 97%, 53%);
 }
 
+
 .btn-submit:hover{
   color: white;
 }
+/*Containers*/
 
+.container {
+  position: absolute;
+  top: 50px;
+  left: 510px;
+  width: 30%;
+  border-radius: 8%;
+  background: linear-gradient(180deg, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+}
 
-.footer-container{
-  font-size: 0.75rem;
-  margin: 0 auto;
-  padding-top: 0;
-  text-align: center;
+.container-card, .container-submit {
+  padding: 8%;
+}
+
+.container-content {
+  margin: 0;
+  padding: 30px 20px 0; 
+}
+
+.container-buttons {
+  gap: 0 20px;
+  margin: 15px auto;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.container-content-img {
+  background-color:hsla(216, 12%, 54%, 0.205);
+  padding: 5%;
+  border-radius: 50%;
 }
 
 .container-submit {
@@ -97,7 +95,12 @@ button:focus {
   padding: 60px 20px 20px; 
 }
 
-.result-selected {
+.submit-img {
+  margin: 0 auto;
+  display: block;
+}
+
+.result {
   border-radius: 20px;
   padding: 0 10px;
   margin-top: 20px;
@@ -107,17 +110,26 @@ button:focus {
   background: hsla(216, 12%, 54%, 0.205);
 }
 
-.container-submit-img {
-  display: flex;
-  margin: 0 auto;
-  order:-1;
-  justify-content: center;
+.footer-container{
+  position: relative;
+  font-size: 0.75rem;
+  padding-top: 0;
+  text-align: center;
+  top: 550px;
+  right: -30px;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1030px) {
+
+  button {
+    font-size: 1.25rem;
+  }
   .container {
+    display: block;
+    position:static;
     padding: 0.24rem;
-    width: 70%;
+    width: 40%;
+    margin: 80px auto;
   }
 
   .container-content {
@@ -125,17 +137,46 @@ button:focus {
   }
 
   .btn-submit {
-    width: 80%;
-    margin: 8px auto 20px;
+    margin: 20px auto 20px;
     display: block; 
   }
 
-  .button-numbers {
-    gap: 0 14px;
-    margin: 5px auto 20px;
+  .container-buttons {
+    display: flex;
+    margin: 10px;
+    gap: 0 10px;
+    font-size: 12px;
+    font-weight: bold;
+    justify-content: center;
   }
-  .container-content-img {
+
+
+  .content-img {
     margin: 40px 0 0;
   }
 }
 
+@media screen and (max-width: 840px) {
+  p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  button {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  .btn {
+    padding: 4px 10px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    width: 80%;
+    
+  }
+  .container-content {
+    padding: 20px 0;
+  }
+}
