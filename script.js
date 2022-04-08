@@ -38,12 +38,6 @@ function submitBtn() {
     
     document.getElementById('rate-selected').innerHTML = rate;
     
-
-    if (rate === undefined) {
-        
-    } else {
-        alert('Rate submitted');
-    }
 }
 
 
