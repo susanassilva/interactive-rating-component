@@ -1,9 +1,3 @@
-// container-card / card = card
-// container-buttons = rating
-// btn-submit = submit-btn
-// container-submit = submitted
-// rate-selected = total
-
 const container_submit = document.getElementById('container-submit');
 const container_card = document.getElementById('container-card');
 const btn = document.getElementById('container-buttons').value;
@@ -35,9 +29,7 @@ function rate_five () {
 function submitBtn() {
     document.getElementById('container-card').style.display = 'none';
     document.getElementById('container-submit').style.display = 'block';
-    
     document.getElementById('rate-selected').innerHTML = rate;
-    
 }
 
 
